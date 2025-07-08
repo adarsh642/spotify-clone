@@ -34,3 +34,26 @@
 .p-1{
     padding: 10px;
 }
+
+.cardContainer {
+    display: flex;
+    flex-direction: row; 
+    gap: 10px;    /* Stack cards vertically */
+    
+    max-height: 400px;          /* Set a max height for scrolling */
+    overflow-y: auto;           /* Enable vertical scroll */
+    padding-right: 8px;         /* Prevent scrollbar overlap */
+    scrollbar-width: thin;      /* Firefox scrollbar */
+}
+.cardContainer::-webkit-scrollbar {
+    width: 6px;
+}
+
+.cardContainer::-webkit-scrollbar-thumb {
+    background-color: #555;
+    border-radius: 4px;
+}
+
+.cardContainer::-webkit-scrollbar-track {
+    background: #1e1e1e;
+}
